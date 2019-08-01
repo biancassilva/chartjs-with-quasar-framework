@@ -1,6 +1,6 @@
 # Quasar with Chartjs (quasar-with-chartjs)
 
-A Quasar Framework app
+Projeto de demonstração do uso da biblioteca ChartJs com o Quasar Framework
 
 ## Install the dependencies
 ```bash
@@ -22,5 +22,3 @@ yarn run lint
 quasar build
 ```
 
-### Customize the configuration
-See [Configuring quasar.conf.js](https://quasar.dev/quasar-cli/quasar-conf-js).
