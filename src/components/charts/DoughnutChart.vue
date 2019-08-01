@@ -1,0 +1,72 @@
+<template>
+  <q-card class="bg-white full-width">
+    <q-card-section class="bg-blue-grey-8">
+      <div class="row items-center no-wrap">
+        <div class="col">
+          <div class="text-h6 text-white text-center">Doughnut Chart</div>
+        </div>
+        <div class="col-auto">
+          <q-btn color="white" round flat icon="more_vert">
+            <q-menu cover auto-close>
+              <q-list>
+                <q-item clickable>
+                  <q-item-section>Remove Card</q-item-section>
+                </q-item>
+                <q-item clickable>
+                  <q-item-section>Send Feedback</q-item-section>
+                </q-item>
+                <q-item clickable>
+                  <q-item-section>Share</q-item-section>
+                </q-item>
+              </q-list>
+            </q-menu>
+          </q-btn>
+        </div>
+      </div>
+    </q-card-section>
+    <q-card-section>
+      <canvas id="doughnut-chart"></canvas>
+    </q-card-section>
+  </q-card>
+</template>
+
+<script>
+import Chart from 'chart.js'
+export default {
+  data () {
+    return {
+    }
+  },
+  mounted () {
+    this.createChart('doughnut-chart')
+  },
+  methods: {
+    createChart (chartId) {
+      const ctx = document.getElementById(chartId)
+      const myChart = new Chart(ctx, {
+        type: 'doughnut',
+        data: {
+          labels: ['Africa', 'Asia', 'Europe', 'Latin America', 'North America'],
+          datasets: [
+            {
+              label: 'Population (millions)',
+              backgroundColor: ['#3e95cd', '#8e5ea2', '#3cba9f', '#e8c3b9', '#c45850'],
+              data: [2478, 5267, 734, 784, 433]
+            }
+          ]
+        },
+        options: {
+          title: {
+            display: true,
+            text: 'Predicted world population (millions) in 2050'
+          }
+        }
+      })
+      return myChart
+    }
+  }
+}
+</script>
+
+<style>
+</style>
