@@ -5,23 +5,6 @@
         <div class="col">
           <div class="text-h6 text-white text-center">Polar Area Chart</div>
         </div>
-        <div class="col-auto">
-          <q-btn color="white" round flat icon="more_vert">
-            <q-menu cover auto-close>
-              <q-list>
-                <q-item clickable>
-                  <q-item-section>Remove Card</q-item-section>
-                </q-item>
-                <q-item clickable>
-                  <q-item-section>Send Feedback</q-item-section>
-                </q-item>
-                <q-item clickable>
-                  <q-item-section>Share</q-item-section>
-                </q-item>
-              </q-list>
-            </q-menu>
-          </q-btn>
-        </div>
       </div>
     </q-card-section>
     <q-card-section>
