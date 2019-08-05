@@ -1,6 +1,3 @@
-[[https://github.com/biancassilva/chartjs-with-quasar-framework/assets/quasar-logo-full.svg|alt=QuasarFramework]]
-
-
 # Chart.js with Quasar Framework
 
 Hello! This is a small project that demonstrates the integration of Quasar Framework with the Chart.js library for charting.
