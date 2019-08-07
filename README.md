@@ -1,6 +1,6 @@
 # Chart.js with Quasar Framework
 
-Hello! This is a small project that demonstrates the integration of Quasar Framework with the Chart.js library for charting.
+Hello! This is a small project that demonstrates the integration of Quasar Framework with the Chart.js plugin for charting.
 
 ## Objective
 
